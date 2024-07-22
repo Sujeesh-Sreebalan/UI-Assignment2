@@ -1,0 +1,203 @@
+/* Scrolling behavaior of the web page */
+*{
+  scroll-behavior: smooth;
+}
+
+
+/* Navigation bar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-items{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.menu-items-details > a{
+    text-decoration: none;
+    color: #4389e3;
+}
+
+.menu-items-details:hover{
+  border-bottom: 2px solid #4389e3;
+  cursor: pointer;
+}
+
+/* Background Image  */
+.container h2{
+  position: absolute;
+  left: 40%;
+}
+
+.heading{
+  text-align: center;
+  font-weight: bold;
+}
+
+.image{
+  background: url(metacube_office.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  height: 39rem;
+}
+
+
+#heading-pricing, #heading-feedback, #heading-add-vehicle, #heading-add-employee{
+  text-align: center;
+}
+
+/* Adding Employee Section */
+#add-employee{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.employee-form{
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#full-name, #gender, #email, #password, #confirm-password, #contact-number{
+  border: 1px solid #4389e3;
+  border-radius: 5px;
+  color: #4389e3;
+  padding: 8px;
+  width: 220px;
+} 
+
+#gender{
+  width: 238px;
+}
+
+.form{
+  text-align: center;
+}
+
+.submit-form{
+  background-color: rgb(132, 151, 235) ;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  width: 130px;
+}
+
+
+/* Add Vehicle Section */
+#vehicle-make, #vehicle-model, #type, #vehicle-number, #employee-id, #identification{
+  border: 1px solid #4389e3;
+  border-radius: 5px;
+  color: #4389e3;
+  padding: 8px;
+  width: 220px;
+}
+
+#type{
+  width: 238px;
+}
+
+.employee-image{
+  background-size: cover;
+  background-position: center;
+}
+
+#add-vehicle{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+
+/* Feedback Section */
+#give-feedback{
+  background: url(feedback-image.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  padding: 50px;
+  text-align: left;
+}
+
+#name, #subject, #message, #email-id{
+  padding: 8px;
+  border-radius: 5px;
+  color: #4389e3;
+}
+
+
+/* Pricing Section */
+.pricing-table{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+  align-content: flex-start 
+}
+
+.pricing-column{
+  border: 2px solid #4389e3;
+  padding: 15px 75px;
+  border-radius: 8px; 
+}
+
+.vehicle-type{
+  padding: 10px;
+  border: 1px solid #4389e3;
+  border-radius: 50%;
+  color: #4389e3;
+  transition: 0.3s;
+  cursor: pointer;
+  height: 8rem;
+  width: 8rem;
+}
+
+.vehicle-type:hover{
+  background-color: #76abf0;
+  color: white;
+  border: 1px solid white;
+}
+
+.purchase{
+  background-color: rgb(132, 151, 235);
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  align-items: center;
+  width: 85px;
+}
+
+.purchase:hover{
+  background-color: white;
+  color:#4389e3;
+}
+
+.purchase:active{
+  border-bottom: 1px solid #4389e3;
+  box-shadow: 2px 2px grey;
+}
+
+.list{
+  padding: 5px;
+}
+
+.pricing-column  li{
+  list-style: none;
+  padding: 3px;
+  align-items: center;
+}
+
+.pricing-column h3{
+  text-align: center;
+}
+
+
+

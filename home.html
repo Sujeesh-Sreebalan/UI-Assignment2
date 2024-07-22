@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metacube Parking System</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body class="landing_page">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Metacube.png" alt="company logo" width="200">
+        </div>
+        <div class="menu">
+            <ul class="menu-items">
+                <li class="menu-items-details"><a href="#heading-add-employee">Add Employee</a></li>
+                <li class="menu-items-details"><a href="#heading-add-vehicle">Add Vehicle</a></li>
+                <li class="menu-items-details"><a href="#heading-pricing">Pricing</a></li>
+                <li class="menu-items-details"><a href="#heading-feedback">Give FeedBack</a></li>
+            </ul>   
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="heading">Welcome to Metacube Parking</h2>
+        <section class="image"> 
+        </section>
+    </div>
+    
+    
+    <h2 id="heading-add-employee">Employee Details</h2>
+    <section id="add-employee">
+        <div class="employee-image">
+            <img src="add-employee.jpg" alt="Add Employee">
+        </div>
+
+        <div class="employee-form">
+            <form>
+                <input type="text" name="Full-name" id="full-name" placeholder="Full Name" required><br><br>
+
+                <select name="gender" id="gender">
+                    <option value="male">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select><br><br>
+
+                <input type="text" name="email" id="email" placeholder="someone@metacube.com" required><br><br>
+
+                <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required><br><br>
+                
+                <input type="number" name="contact-number" id="contact-number" maxlength="10" minlength="10" placeholder="Contact Number" required><br><br>
+
+                <div class="form">
+                    <input type="submit" class="submit-form" value="Add Employee">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <h2 id="heading-add-vehicle">Vehicle Details</h2>
+    <section id="add-vehicle">
+        
+        <div class="vehicle-form">
+            <form>
+                <input type="text" id="vehicle-make" name="vehicle-make" placeholder="Vehicle Make (Company)" required><br><br>
+    
+                <input type="text" id="vehicle-model" name="vehicle-model" placeholder="Vehicle Model" required><br><br>
+    
+                <select name="type" id="type" required>
+                    <option value="">Type: </option>
+                    <option value="cycle">Cycle</option>
+                    <option value="motorcycle">MotorCycle</option>
+                    <option value="four-wheeler">Four Wheeler</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+    
+                <input type="text" id="vehicle-number" name="vehicle-number" placeholder="Vehicle Number" required> <br><br>
+    
+                <input type="number" id="employee-id" name="employee-id" placeholder="Employee ID:" required><br><br>
+    
+                <textarea id="identification" name="identification" required placeholder="Color, mark, visible accessory etc."></textarea><br><br>
+                
+                <div class="form">
+                    <input type="submit" class="submit-form" value="Add Vehicle">
+                </div>
+                
+            </form>
+        </div>
+
+        <div class="vehicle-image">
+            <img src="add-vehicle.avif" alt="Add Employee">
+        </div>
+    </section>
+
+    <h2 id="heading-feedback">Give FeedBack</h2>
+    <section id="give-feedback">
+        <form >
+
+            <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+
+            <input type="email" id="email-id" name="email-id" placeholder="Email" required><br><br>
+
+            <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
+
+            <textarea id="message" name="message" placeholder="Message" required>
+            </textarea> <br><br>
+            
+            <input type="submit" class="submit-form" value="Submit">
+        </form>
+    </section>
+
+    <section id="pricing">
+        <h2 id="heading-pricing">Pricing</h2>
+
+        <div class="pricing-table">
+            <div class="pricing-column">
+
+                <h3>Cycle</h3>
+                <select name="vehicle-type" class="vehicle-type">
+                    <option value="daily">Daily: ₹5 </option>
+                    <option value="monthly">Monthly: ₹100 </option>
+                    <option value="yearly">Yearly: ₹500</option>
+                </select>
+                <ul class="list">
+                    <li>Daily: ₹5</li>
+                    <li>Monthly: ₹100</li>
+                    <li>Yearly: ₹500</li>
+                </ul>
+                <input type="submit" class="purchase" value="Purchase">
+            </div>
+
+            <div class="pricing-column">
+                <h3>MotorCycle</h3>
+                <select name="vehicle-type" class="vehicle-type">
+                    <option value="daily">Daily: ₹10</option>
+                    <option value="monthly">Monthly: ₹200 </option>
+                    <option value="yearly">Yearly: ₹1000</option>
+                </select>
+                <ul class="list">
+                    <li>Daily: ₹10</li>
+                    <li>Monthly: ₹200</li>
+                    <li>Yearly: ₹1000</li>
+                </ul>
+                <input type="submit" class="purchase" value="Purchase">
+            </div>
+
+            <div class="pricing-column">
+                <h3>Four Wheeler</h3>
+                <select name="vehicle-type" class="vehicle-type">
+                    <option value="daily">Daily: ₹20</option>
+                    <option value="monthly">Monthly: ₹500 </option>
+                    <option value="yearly">Yearly: ₹3500</option>
+                </select>
+                <ul class="list">
+                    <li>Daily: ₹20</li>
+                    <li>Monthly: ₹500</li>
+                    <li>Yearly: ₹3500</li>
+                </ul>
+                <input type="submit" class="purchase" value="Purchase">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer"> </div>
+    </footer>
+
+</body>
+</html>
